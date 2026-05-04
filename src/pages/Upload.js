@@ -24,7 +24,7 @@ export default function Upload() {
     formData.append("jobDesc", jobDesc);
 
     try {
-      const response = await fetch("http://localhost:5000/analyze", {
+      const response = await fetch("https://resume-analyzer-backend-vbdw.onrender.com/analyze", {
         method: "POST",
         body: formData,
       });

@@ -5,7 +5,9 @@ const pdfParse = require("pdf-parse");
 const natural = require("natural");
 
 const app = express();
-app.use(cors());
+app.use(cors({
+  origin: "*"
+}));
 
 const upload = multer();
 
